@@ -7,3 +7,4 @@ def uruchom():
     app_name = os.getenv("APP_NAME", "Aplikacja domyślna")
     print(f"Startuję aplikację: {app_name}")
     print("Wersja developerska")
+    print("eloelo420")
