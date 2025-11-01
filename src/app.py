@@ -15,3 +15,7 @@ def root():
 def sum_numbers(a: float, b: float):
     result = a + b
     return {"result": result}
+
+@app.get("/multiply")
+def multiply_numbers(a: float, b: float):
+    return {"result": a * b}
