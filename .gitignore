@@ -1,0 +1,21 @@
+# środowisko wirtualne
+.venv/
+venv/
+
+# cache Pythona
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VS Code
+.vscode/
+
+# systemowe
+.DS_Store
+
+# jeśli kiedyś będziesz generować dane / logi:
+logs/
+*.log
+
+.env
