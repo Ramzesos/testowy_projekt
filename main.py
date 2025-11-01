@@ -1,4 +1,2 @@
-from src.app import uruchom
 
-if __name__ == "__main__":
-    uruchom()
+from src.app import app

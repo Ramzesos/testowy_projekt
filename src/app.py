@@ -1,10 +1,17 @@
-import os
+from fastapi import FastAPI, HTTPException
 from dotenv import load_dotenv
+import os
 
-load_dotenv()  # wczyta zmienne z .env
+load_dotenv()
 
-def uruchom():
+app = FastAPI(title="Testowy projekt API")
+
+@app.get("/")
+def root():
     app_name = os.getenv("APP_NAME", "Aplikacja domyślna")
-    print(f"Startuję aplikację: {app_name}")
-    print("Wersja developerska")
-    print("eloelo420")
+    return {"message": f"Startuję: {app_name}"}
+
+@app.get("/sum")
+def sum_numbers(a: float, b: float):
+    result = a + b
+    return {"result": result}
